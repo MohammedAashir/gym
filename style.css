@@ -10,11 +10,17 @@
 }
 body{
 	background: #010104;
+
+}
+header{
+	display: flex;
+	width: 100%;
 }
 a{
 	text-decoration: none;
 	color: #FFF;
 }
+
 .primary_color{
 	color: var(--primary-color);
 }
@@ -25,10 +31,12 @@ a{
 	align-items: center;
 	height: 110px;
 	border-bottom: 5px solid var(--primary-color);
+	overflow: hidden;
 }
 .logo{
+	display: flex;
 	color: #fff;
-	font-size: 25px;
+	font-size: 2em;
 }
 .nav_menu{
 	display: flex;
@@ -36,6 +44,7 @@ a{
 	list-style: none;
 	height: 100%;
 }
+
 .nav_menu li{
 	margin: 0 .2rem;
 	padding: 0 1.2rem 0.3rem 1.2rem;
@@ -65,12 +74,13 @@ a{
 	background-repeat: no-repeat;
 	height: 80vh;
 	width: 100%;
+	overflow: auto;
 	
 }
 .home_form{
 	width: 400px;
-	background: rgba(0, 0, 0 / 10%);
-	display: flex;
+	background-color: black;
+    display: flex;
 	position: absolute;
 	justify-content: center;
 	right: 5%;
@@ -78,7 +88,6 @@ a{
 	flex-direction: column;
 	align-items: center;
 	padding: 3rem 0;
-	backdrop-filter: blur(10px);
 	border-radius: 20px;
 }
 .home_form h1{
@@ -190,9 +199,8 @@ a{
 	justify-content: center;
 }
 .about-card{
-	padding: 1rem;
-	width: 400px;
-	height: 370px;
+	padding: 10px;
+	width: 385px;
 	margin: 0 2rem;
 }
 .about-card:first-child{
@@ -219,8 +227,8 @@ a{
 	letter-spacing: 2px;
 }
 .about-card:last-child{
-	height: 330px;
-	box-shadow: 0 0 20px #000;
+	height: 320px;
+	box-shadow: 0 0 10px #000;
 }
 footer{
 	padding-top: 3rem;
